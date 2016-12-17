@@ -801,9 +801,9 @@ CoreStateMachine.prototype.play = function (index) {
 
 	this.commandRouter.pushConsoleMessage('[' + Date.now() + '] ' + 'CoreStateMachine::play');
 
-	if (index) {
-		self.currentPosition=index;
-	}
+	//if (index) {
+	//	self.currentPosition=index;
+	//}
 
 	return self.setConsumeUpdateService(undefined)
 		.then(function()
